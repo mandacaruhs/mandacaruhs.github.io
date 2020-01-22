@@ -5,10 +5,7 @@ body {
     height: 100vh;
     color: #8a8a8a;
     margin: 0px;
-    background-image: radial-gradient(#8a8a8a 2%, transparent 10%), radial-gradient(#07e87e 2%, transparent 10%);
-    background-color: #e8e8e8;
-    background-position: 0 0, 2px -1px;
-    background-size: 10px 15px;
+    background: linear-gradient(145deg, #f8f8f8, #d1d1d1);
 }
 
 .msg {
