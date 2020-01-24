@@ -1,0 +1,30 @@
+/* Estilos utilizados na página do MHS */
+
+body {
+    background-color: #e8e8e8;
+    padding: 0px 200px
+}
+
+header {
+    background-color: #94da86;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+
+}
+
+ul li {
+    display: inline;
+}
+
+.menu-opcoes {
+    text-align: center;
+}
