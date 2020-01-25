@@ -12,6 +12,7 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    align-items: center;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
     padding: 15px 10%;
     box-shadow: 0px 2px 5px #292b30 ;
     background-color: #24252a;
+    width: 100%;
 }
 
 h2{
@@ -63,5 +65,13 @@ a {
 .content {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 650px;
+}
+
+.banner{
+    background-image: url("../res/mandazinho.svg");
+    background-repeat: repeat;
+    width: 300px;
+    height: 300px;
+    color: springgreen;
 }
