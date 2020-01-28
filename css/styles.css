@@ -62,6 +62,22 @@ a {
     color: white;
 }
 
+.text_center {
+    text-align: center;
+}
+
+.img_left {
+    float: left;
+}
+
+.img_right {
+    float: right;
+}
+
+.img_container {
+    height: 300px;
+}
+
 .content {
     display: flex;
     flex-direction: column;
