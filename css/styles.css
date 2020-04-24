@@ -1,5 +1,13 @@
 /* Estilos utilizados na página do MHS */
 
+:root {
+    --header-bkg-color: #2d142c;
+    --header-txt: #ee4540;
+    --section-who-bkg: #c72c41;
+    --section-what-bkg: #801336;
+    --section-services-bkg: #ee4540;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,34 +21,75 @@ body {
     flex-direction: column;
     height: 100%;
     align-items: center;
+    background: rgb(128,19,54);
+    background: linear-gradient(180deg, rgba(128,19,54,1) 0%, rgba(45,20,44,1) 100%); 
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 10%;
-    box-shadow: 0px 2px 5px #292b30 ;
-    background-color: #24252a;
+    align-items: end;
+    padding: 15px 20%;
+    background-color: var(--header-bkg-color);
     width: 100%;
+    height: 200px;
 }
 
-h2{
+h2 {
     padding: 50px 0px;
+    font-weight: 400;
+}
+
+h3 {
+    padding: 15px 0px;
 }
 
 li, a {
     text-decoration: none;
     text-emphasis: none;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     color: inherit;
 }
 
+p {
+    text-align: justify;
+    letter-spacing: 1pt;
+    padding: 0px 0px 10px 0px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.outter_box {
+    padding: 35px 50px 35px 50px;
+}
+
+.--who {
+    background: var(--section-who-bkg);
+    color: white;
+}
+
+.--projetos {
+    background: var(--section-what-bkg);
+    color: white;
+}
+
+.--services {
+    background-color: var(--section-services-bkg);
+    color: white;
+}
+
+.inner_box {
+    margin: 10px 5px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #d7f3e6;
+}
+
 .logo {
-    width: 75px;
+    width: 135px;
     cursor: pointer;
 }
 
@@ -54,7 +103,7 @@ a {
 }
 
 .nav_links li a {
-    color:#07e87e;
+    color: var(--header-txt);
     transition: all 0.3s ease 0s;
 }
 
@@ -62,16 +111,50 @@ a {
     color: white;
 }
 
+.text_center {
+    text-align: center;
+}
+
+.img_left {
+    float: left;
+    padding-right: 30px;
+}
+
+.img_right {
+    float: right;
+    padding-left: 30px
+    ;
+}
+
+.img_container {
+    height: 300px;
+}
+
 .content {
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 700px;
 }
 
-.banner{
-    background-image: url("../res/mandazinho.svg");
-    background-repeat: repeat;
-    width: 300px;
-    height: 300px;
-    color: springgreen;
+.icon {
+    margin: 0px 10px 0px 0px;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f8f8f8, #d1d1d1);
+    box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #07e87e;
+}
+
+.buttons {
+    display: flex;
+}
+
+.contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }

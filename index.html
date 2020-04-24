@@ -3,15 +3,18 @@
     <head>
         <title>Mandacaru HackerSpace</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:400,500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,400,500&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/5b7a9d44bc.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
         <!-- Cabeçalho -->
         <header>
             <!-- Logo do MHS, que também será o botão home -->
-            <h1><img class="logo" src="res/logo_mhs_black.png" alt="Mandacaru HackerSpace"></h1>
+            <h1><img class="logo" src="res/red1.png" alt="Mandacaru HackerSpace"></h1>
 
             <!-- Itens -->
             <nav class="nav_links">
@@ -26,55 +29,63 @@
 
         <!-- Conteúdo em geral-->
         <div class="content">
-            <section>
+            <section class="outter_box --who">
                 <!-- Quem somos -->
                 <h2 id="mhs">Quem somos e o que fazemos (e o que não fazemos!!)</h2>
-                <p>
+                <p >
                     O Mandacaru HackerSpace (MHS, para sermos simples) é um laboratório comunitário, aberto a tod@s que queiram
                     utilizar o nosso espaço e nossas ferramentas para criar coisas legais e que, quem sabe,
                     possam vir a mudar o mundo.
                 </p>
-                <p>
+                <p >
                     Um de nossos objetivos é a divulgação da cultura <em>maker</em> (aprender fazendo). Para alcançarmos
                     esse objetivo, realizamos oficinas que abordam assuntos como Arduino, Python, etc.
                 </p>
-                <p>
+                <p >
                     Além disso, o MHS também visa a ser um espaço de convivência, onde as pessoas possam se encontrar
                     para fazer suas montagens e colocar suas ideias em prática ou simplesmente para conversar.
                 </p>
-                <p>
+                <p >
                     Sabemos do peso negativo que a palavra <em>hacker</em> carrega e por isso mesmo
                     gostaríamos de deixar bem claro que não fazemos/não prestamos serviços de invasão de
                     celulares, sites ou qualquer coisa do tipo. <strong>POR FAVOR, NÃO INSISTAM!!</strong>
                 </p>
             </section>
 
-            <section>
+            <section class="outter_box --projetos">
                 <!-- Projetos -->
                 <h2 id="projetos">Projetos concluídos e em curso</h2>
-                <h3>
-                    Fresa CNC
-                </h3>
-                <p>
-                    Fresa controlada por computador, utilizando Arduino Uno para comunicar-se com PC e comandando os motores
-                    de passo que movimentarão a ferramenta (tupia), dando vida à máquina.
-                </p>
-                <p>
-                    Construção iniciada em dezembro de 2016 e concluída em fevereiro de 2017 (em pleno carnaval!!).
-                </p>
+                <div class="img_container">
+                    <h3 class="text_center">
+                        Fresa CNC
+                    </h3>
+                    <div class="img-card">
+                        <img class="img_left" src="res/marcador.jpeg" alt="marcador">
+                        <p>
+                            Fresa controlada por computador, utilizando Arduino Uno para comunicar-se com PC e comandando os motores
+                            de passo que movimentarão a ferramenta (tupia), dando vida à máquina.
+                        </p>
+                        <p>
+                            Construção iniciada em dezembro de 2016 e concluída em fevereiro de 2017 (em pleno carnaval!!).
+                        </p>
+                    </div>
+                </div>
                 
-                <h3>
-                    Ogum Mark I (impressora 3D)
-                </h3>
-                <p>
-                    Impressora 3D baseada na RepRap.
-                </p>
-                <p>
-                    Construção iniciada em novembro de 2019 e terminada em dezembro de 2019.
-                </p>
+                <div class="img_container">
+                    <h3 class="text_center">
+                        Ogum Mark I (impressora 3D)
+                    </h3>
+                    <img class="img_right" src="res/marcador.jpeg" alt="marcador">
+                    <p>
+                        Impressora 3D baseada na RepRap.
+                    </p>
+                    <p>
+                        Construção iniciada em novembro de 2019 e terminada em dezembro de 2019.
+                    </p>
+                </div>
             </section>
 
-            <section>
+            <section class="outter_box --services">
                 <!-- Serviços -->
                 <h2 id="servicos">Serviços que oferecemos</h2>
                 <!-- Corte na CNC-->
@@ -110,12 +121,24 @@
                     orçamento do serviço. O orçamento a ser enviado conterá os tipos de filamentos disponíveis (ABS e/ou PLA), as cores
                     disponíveis (impressão em somente uma cor), o valor e o prazo de entrega.
                 </p>
-            </section>
+            </section class="outter_box">
         </div>
 
         <!-- Rodapé -->
-        <footer>
-            <!-- itens -->
+        <footer class="contact">
+            <p>Nos encontre em:</p>
+            <div class="buttons">
+                <div class="icon">
+                    <a class="plain" href="http://www.facebook.com/mandacaruhs">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="http://www.instagram.com/mandacaruhs">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+            </div>
         </footer>
 
     </body>
