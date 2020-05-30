@@ -2,7 +2,7 @@
 title: Mandacaru Hackerspace
 description: Espaço Hacker em Feira de Santana
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "localhost:3000" 
+url: "" 
 
 # Configurações da Página
 titulo: Mandacaru Hackerspace
@@ -11,6 +11,7 @@ user_title:
 
 imagem: assets/background.png
 imagem_logo_principal: assets/logo.png
+imagem_logo_principal: assets/logo2.png
 imagem_logo: assets/logoicone.png
 imagem_logo_mobile: assets/logoicone2.png
 imagem_conteudo: assets/background2.png
