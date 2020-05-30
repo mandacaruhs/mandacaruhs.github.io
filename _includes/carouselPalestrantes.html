@@ -1,0 +1,110 @@
+<!--Carousel Wrapper-->
+
+
+
+<div style="background-image: url({{site.imagem_conteudo}});background-attachment: fixed">
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body"></div>
+                <h3 class="modal-title text-center col-md-12" id="exampleModalLabel"></h3>
+                <h4 class="modal-subtitle text-center"></h4>
+                <div class="modal-text text-justify"></div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 style="text-align: center">Membros</h1>
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" style="height: 400px">
+
+            <!--Controls->
+            <div class="controls-top">
+                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                        class="icon fa fa-chevron-left"></i></a>
+                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                        class="icon fa fa-chevron-right"></i></a>
+            </div>
+
+            <!--/.Controls-->
+
+            <!--Controls-->
+        <a class="carousel-control-prev d-none d-md-block" href="#multi-item-example" role="button" data-slide="prev" style="margin-left: -10%; width: 120px">
+            <span class="icon fa fa-chevron-left text-info" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next d-none d-md-block" href="#multi-item-example" role="button" data-slide="next" style="margin-right: -10%; width: 120px">
+            <span class="icon fa fa-chevron-right text-info" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+
+            <!--Indicators->
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+        </ol>
+        <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="row">
+                        {% assign f = 0 %}
+                        {% for i in site.palestrantes%}
+                        {% if f == 4 %}
+
+                    </div>
+                </div>
+                {% assign f = 0 %}
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        {% endif %}
+
+                        <div class="col-md-3 col-6">
+                            <a class="card-link" data-toggle="modal" data-target="#exampleModal"
+                                data-vinculo="{{i.vinculo}}" data-texto="{{i.texto}}" data-nome="{{i.nome}}"
+                                data-imagem={{i.imagem}}>
+                                <div class="card mb-2" style="width: 100%">
+                                    <img class="card-img-top" src="{{ i.imagem }}" alt="{{i.nome}}"
+                                        style="height: 100%;">
+                                    <div class="card-body d-none d-md-block" style="margin-top: -50px">
+                                        <h3 class="card-title text-center">{{ i.nome }}</h3>
+                                        <p class="card-subtitle text-center"> {{i.vinculo}} </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        {% assign f = f| plus: 1 %}
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Slides-->
+            
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</div>

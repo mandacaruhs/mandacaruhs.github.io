@@ -1,0 +1,70 @@
+# Site settings
+title: Mandacaru Hackerspace
+description: Espaço Hacker em Feira de Santana
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "localhost:3000" 
+
+# Configurações da Página
+titulo: Mandacaru Hackerspace
+descricao: Hackerspace em Feira de Sanatana
+user_title:
+
+imagem: assets/background.png
+imagem_logo_principal: assets/logo.png
+imagem_logo: assets/logoicone.png
+imagem_logo_mobile: assets/logoicone2.png
+imagem_conteudo: assets/background2.png
+
+contato_email: leomachadoms@gmail.com
+contato_instagram: https://www.instagram.com/mandacaruhs/
+contato_facebook: https://www.facebook.com/MandacaruHS/
+
+cor_padrao: rgb(123, 148, 59)
+
+# Patrocinadores
+patrocinadores:
+  - us:
+    nome: Mandacaru Hackerspace
+    imagem: assets/apoio/LogoVer.png
+    link: https://www.instagram.com/mandacaruhs/
+# Apoio
+
+apoio:
+  - us:
+    nome: Mandacaru Hackerspace
+    imagem: assets/apoio/LogoVer.png
+    link: https://www.instagram.com/mandacaruhs/
+
+# Palestrantes
+palestrantes:
+  - us:
+    nome: Marcelo Bião
+    imagem: assets/palestrantes/marcelo.png
+    vinculo: Mandacaru Hackerspace
+    texto: Sou Master das culinárias do Mandacaru Hackerspace. Faço um ótimo arroz com calabresa, mas esqueço na geladeira por uma semana. 
+  - us:
+    nome: Sérgio Matos
+    imagem: assets/palestrantes/sergio.png
+    vinculo: Mandacaru Hackerspace
+    texto: Sou Master dos paranauês do Mandacaru Hackerspace. De vez em quando, eu esqueço de enviar a arte dos eventos.
+  - us:
+    nome: Vitor Cardim
+    imagem: assets/palestrantes/vitor.png
+    vinculo: Mandacaru Hackerspace
+    texto: Sou Master of Cards do Mandacaru Hackerspace. Comi uma pizza de 3 queijos, fui procurar o banheiro e acabei parando em Uberlândia.
+  - us:
+    nome: Leo Melo
+    imagem: assets/palestrantes/leonardo.png
+    vinculo: Mandacaru Hackerspace
+    texto: Sou Master arteiro do Mandacaru Hackerspace. Sou o maior nome representante do terraplanismo no globo. 
+  - us:
+    nome: Fábio Bispo
+    imagem: assets/palestrantes/fabio.png
+    vinculo: Mandacaru Hackerspace
+    texto: Sou CEO do Mandacaru Hackerspace. Procuro meios de invadir a conta do telegram do Ministro da Justiça. Fogo nos racistas!
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
